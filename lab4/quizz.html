@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rio de Janeiro</title>
+</head>
+<section>
+    <body>
+        <header>
+            <h1>Rio de Janeiro</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimédia</a>
+                <a href="info.html">Informação</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="viagem.html">Viagem</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="images/Rio-de-Janeiro.jpg" alt="Cristo Redentor e Baía de Guanabara" class="imagem-principal"/>
+                <h2>Quizz</h2>
+                <form method="get" action="https://postman-echo.com/get">
+                    <fieldset>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" autocomplete="on" placeholder="Insira o seu nome"
+                            size="15" maxlength="50" autofocus required>
+
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" name="apelido" id="apelido" autocomplete="on"
+                            placeholder="Insira o seu apelido" size="15" maxlength="50" autofocus required>
+
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" autocomplete="on" placeholder="Insira o seu email"
+                            size="15" maxlength="100" autofocus required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="baiaDesembarque">Qual é o nome da baía no Rio de Janeiro onde os portugueses
+                            desembarcaram pela primeira vez em 1502?</label>
+                        <input type="text" id="baiaDesembarque" name="baiaDesembarque"
+                            placeholder="Digite sua resposta aqui" maxlength="50">
+                        <br><br>
+
+                        <label>Qual destes ícones do Rio de Janeiro é considerado uma das 7 Maravilhas do Mundo
+                            Moderno?</label><br>
+                        <input type="radio" id="cristo" name="maravilha" value="Cristo Redentor">
+                        <label for="cristo">Cristo Redentor</label><br>
+                        <input type="radio" id="paoAcucar" name="maravilha" value="Pão de Açúcar">
+                        <label for="paoAcucar">Pão de Açúcar</label><br>
+                        <input type="radio" id="maracana" name="maravilha" value="Maracanã">
+                        <label for="maracana">Maracanã</label>
+                        <br><br>
+
+                        <label>Quais desses eventos ocorrem no Rio de Janeiro?</label><br>
+                        <input type="checkbox" id="carnaval" name="eventos" value="Carnaval">
+                        <label for="carnaval">Carnaval</label><br>
+                        <input type="checkbox" id="reveillon" name="eventos" value="Réveillon em Copacabana">
+                        <label for="reveillon">Réveillon em Copacabana</label><br>
+                        <input type="checkbox" id="desfile" name="eventos" value="Desfile de Escolas de Samba">
+                        <label for="desfile">Desfile de Escolas de Samba</label><br>
+                        <input type="checkbox" id="rockinrio" name="eventos" value="Rock in Rio">
+                        <label for="rockinrio">Rock in Rio</label>
+                        <br><br>
+
+                        <label for="dataCapital">Quando o Rio de Janeiro deixou de ser a capital do Brasil?</label>
+                        <input type="date" id="dataCapital" name="dataCapital" placeholder="Selecione a data">
+                        <br><br>
+
+                        <label for="porSol">Que horas o sol se põe no Rio de Janeiro no verão?</label>
+                        <input type="time" id="porSol" name="porSol">
+                        <br><br>
+
+                        <label for="corArcosLapa">Qual é a cor tradicional dos Arcos da Lapa, um dos símbolos do Rio de
+                            Janeiro?</label>
+                        <input type="color" id="corArcosLapa" name="corArcosLapa" value="corArcosLapa">
+                        <br><br>
+
+                        <label for="praias">Quantas praias existem no Rio de Janeiro?</label>
+                        <input type="number" id="praias" name="praias" min="1" max="100" step="1">
+                        <br><br>
+
+                        <label for="vontadeVisitarRio">Qual é a sua vontade de visitar o Rio de Janeiro? (0 = Nenhuma,
+                            10 = Muita)</label>
+                        <input type="range" id="vontadeVisitarRio" name="vontadeVisitarRio" min="0" max="10" step="1"
+                            value="5" oninput="this.nextElementSibling.value = this.value">
+                        <output>5</output>
+                        <br><br>
+
+                        <label for="enviarForm">Enviar formulário:</label>
+                        <input type="image" id="enviarForm"
+                            src="images/submit.png"
+                            alt="Enviar Formulário" width="50" height="50">
+                        <label for="reset">Resetar Formulário:</label>
+                        <input type="reset" value="Reset">
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Alessandra Oliveira | Lusófona | 2024</p>
+        </footer>
+    </body>
+
+</html>
