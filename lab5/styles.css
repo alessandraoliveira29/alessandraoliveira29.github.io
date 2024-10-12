@@ -1,0 +1,244 @@
+/* Estilo geral*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header da página */
+header {
+    background-color: #009440;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffcb00;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #302681;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+/* Imagem principal */
+.imagem-principal {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Títulos */
+h1 {
+    color: #302681;
+    font-size: 40px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #302681;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+h3 {
+    color: #302681;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Linha após h3 */
+h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #302681;
+    margin-top: 5px;
+}
+
+/*formulários */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Cabeçalho */
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* footer */
+footer {
+    background-color: #302681;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* fotografias */
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.foto-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fotos img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.foto-item p {
+    margin-top: 10px;
+    font-size: small;
+    color: #555;
+}
+
+/* iframe */
+section iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+pre {
+    font-size: 14px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+/* Ttabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* título tabela */
+th {
+    background-color: #009440;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+/* Cédulas tabela */
+td {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+ol li:nth-child(odd) {
+    color: #009440;
+    font-size: 2em;
+}
+
+ol li:nth-child(even) {
+    color: #ffcb00;
+    font-size: 2em;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ul li:nth-child(odd) {
+    color: #009440;
+    font-size: 2em;
+}
+
+ul li:nth-child(even) {
+    color: #ffcb00;
+    font-size: 2em;
+}
+
+/* Tabela interesses */
+.tabela-interesses {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela-interesses th,
+.tabela-interesses td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-interesses th {
+    background-color: #009440;
+    color: white;
+}
+
+.tabela-interesses tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tabela-interesses tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #ffcb00;
+    color: white;
+}
+
+.tabela-interesses tr:nth-child(odd) td:nth-child(even) {
+    background-color: #302681;
+    color: white;
+}
+
+.fotos a {
+    cursor: zoom-in;  
+  }

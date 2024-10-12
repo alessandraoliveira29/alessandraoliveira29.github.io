@@ -1,0 +1,148 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #2e8b57;    
+    color: white;                 
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;          
+    padding: 20px 30px;           
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  /* Navegação */
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding:20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+  
+  nav a:last-child {
+    background-color: blue;    
+    color: white;                 
+    border-radius: 5px;           
+  }
+  
+  nav a:link {
+    color: #f0f0f0;      
+    padding:20px;         
+  }
+  
+  nav a:visited {
+    color: #dcdcdc;               
+  }
+  
+  nav a:hover {
+    color: #000000;               
+    background-color: #ffffff; 
+    border-radius: 5px;    
+    padding:20px;  
+  }
+  
+  nav a:active {
+    color: #ff6347;               
+  }
+  
+  /* Article */
+article {
+    width: 100vw;                
+    height: 50vh;                
+    background-color: #add8e6;  
+    display: flex;               
+    justify-content: center;     
+    align-items: center;       
+    flex-direction: column;   
+  }
+  
+  .poema {
+    font-weight: bold;           
+    line-height: 1.6;           
+  }
+  
+  .autor {
+    font-style: italic;          
+    margin-top: 10px;           
+  }
+  
+  .imagem-container {
+    position: relative;          
+    width: 100vw;                
+    overflow: hidden;           
+  }
+
+  .imagem-container img {
+    width: 100vw;                
+    height: auto;  
+    object-fit: cover;                
+  }
+
+  .creditos a{
+    position: absolute;          
+    bottom: 10px;                
+    right: 15px;                 
+    color: white;             
+    font-size: 1em;              
+  }
+
+/* Cidades */
+#cidades {
+    display: flex;                
+    flex-direction: row;          
+    flex-wrap: wrap;              
+    justify-content: space-around; 
+    align-items: flex-start;      
+    padding: 20px;                
+    background-color: #f0f0f0;    
+  }
+  
+ 
+  #cidades section {
+    display: flex;                
+    align-items: center;          
+    margin: 10px;                 
+    background-color: #ffffff;   
+    border-radius: 30px;          
+    overflow: hidden;             
+    cursor: pointer;              
+  }
+  
+
+  #cidades img {
+    width: 100px;                 
+    height: 100px;                
+  }
+  
+  #cidades div {
+    width: 100px;                 
+    height: 100%;                 
+    display: flex;                
+    align-items: center;          
+    justify-content: center;     
+    text-align: center;           
+    font-weight: bold;            
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Efeito hover na seção */
+  #cidades section:hover {
+    background-color: #e0e0e0;   
+  }
+  
+  
+  
+
