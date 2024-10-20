@@ -133,8 +133,8 @@ article {
   font-size: 1rem;
 }
 
-/* Cidades */
-#cidades {
+/* Capitais*/
+#capitais {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -145,7 +145,7 @@ article {
 }
 
 
-#cidades section {
+#capitais section {
   display: flex;
   align-items: center;
   margin: 10px;
@@ -156,12 +156,12 @@ article {
 }
 
 
-#cidades img {
+#capitais img {
   width: 100px;
   height: 100px;
 }
 
-#cidades div {
+#capitais div {
   width: 100px;
   height: 100%;
   display: flex;
@@ -172,12 +172,11 @@ article {
   transition: background-color 0.3s ease;
 }
 
-#cidades section:hover {
+#capitais section:hover {
   background-color: #e0e0e0;
 }
 
 /* Experimenta */
-
 #experimenta {
   padding: 40px;
   background-color: #f9f9f9;
