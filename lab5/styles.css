@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ccc;
 }
 
 /* Header da página */
@@ -11,12 +11,6 @@ header {
     background-color: #009440;
     padding: 20px;
     text-align: center;
-}
-
-header img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
 }
 
 /* Navegação */
@@ -39,6 +33,7 @@ nav a {
 nav a:hover {
     background-color: #302681;
     color: white;
+    border-radius: 5px;
 }
 
 main {
@@ -48,16 +43,17 @@ main {
 section {
     margin-bottom: 40px;
     background-color: white;
+    border-radius: 5px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Imagem principal */
 .imagem-principal {
-    max-width: 800px;
     width: 100%;
-    height: auto;
+    max-height: 300px;
     display: block;
-    margin: 20px auto;
-    border-radius: 5px;
+    object-fit: cover;
 }
 
 /* Títulos */

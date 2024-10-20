@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/estatua-cristo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rio de Janeiro</h1>
+    </header>
+    <div class="dropdown">
+        <nav>
+            <button class="dropbtn">
+                Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                <a href="multimedia.html"><i class="fas fa-photo-video"></i> Multimédia</a>
+                <a href="info.html"><i class="fas fa-info-circle"></i> Informação</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
+                <a href="viagem.html"><i class="fas fa-plane"></i> Viagem</a>
+                <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
+                <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
+            </div>
+        </nav>
+    </div>
+    <nav class="main-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+        <a href="multimedia.html"><i class="fas fa-photo-video"></i> Multimédia</a>
+        <a href="info.html"><i class="fas fa-info-circle"></i> Informação</a>
+        <a href="quizz.html" class="active"><i class="fas fa-question-circle"></i> Quizz</a>
+        <a href="viagem.html"><i class="fas fa-plane"></i> Viagem</a>
+        <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
+        <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
+    </nav>
+    <main>
+            <section>
+            <h2>Quizz sobre o Rio de Janeiro</h2>
+            <form method="get" action="https://postman-echo.com/get">
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autocomplete="on" placeholder="Insira o seu nome"
+                        size="15" maxlength="50" autofocus required>
+
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" autocomplete="on"
+                        placeholder="Insira o seu apelido" size="15" maxlength="50" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" autocomplete="on" placeholder="Insira o seu email"
+                        size="15" maxlength="100" required>
+                </fieldset>
+                <fieldset>
+                    <label for="baiaDesembarque">Qual é o nome da baía no Rio de Janeiro onde os portugueses
+                        desembarcaram pela primeira vez em 1502?</label>
+                    <input type="text" id="baiaDesembarque" name="baiaDesembarque"
+                        placeholder="Digite sua resposta aqui" maxlength="50">
+
+                    <label>Qual destes ícones do Rio de Janeiro é considerado uma das 7 Maravilhas do Mundo
+                        Moderno?</label>
+                    <input type="radio" id="cristo" name="maravilha" value="Cristo Redentor">
+                    <label for="cristo">Cristo Redentor</label>
+                    <input type="radio" id="paoAcucar" name="maravilha" value="Pão de Açúcar">
+                    <label for="paoAcucar">Pão de Açúcar</label>
+                    <input type="radio" id="maracana" name="maravilha" value="Maracanã">
+                    <label for="maracana">Maracanã</label>
+
+                    <label>Quais desses eventos ocorrem no Rio de Janeiro?</label>
+                    <input type="checkbox" id="carnaval" name="eventos" value="Carnaval">
+                    <label for="carnaval">Carnaval</label>
+                    <input type="checkbox" id="reveillon" name="eventos" value="Réveillon em Copacabana">
+                    <label for="reveillon">Réveillon em Copacabana</label>
+                    <input type="checkbox" id="desfile" name="eventos" value="Desfile de Escolas de Samba">
+                    <label for="desfile">Desfile de Escolas de Samba</label>
+                    <input type="checkbox" id="rockinrio" name="eventos" value="Rock in Rio">
+                    <label for="rockinrio">Rock in Rio</label>
+
+                    <label for="dataCapital">Quando o Rio de Janeiro deixou de ser a capital do Brasil?</label>
+                    <input type="date" id="dataCapital" name="dataCapital" placeholder="Selecione a data">
+
+                    <label for="porSol">Que horas o sol se põe no Rio de Janeiro no verão?</label>
+                    <input type="time" id="porSol" name="porSol">
+
+                    <label for="corArcosLapa">Qual é a cor tradicional dos Arcos da Lapa, um dos símbolos do Rio de
+                        Janeiro?</label>
+                    <input type="color" id="corArcosLapa" name="corArcosLapa" value="corArcosLapa">
+
+                    <label for="praias">Quantas praias existem no Rio de Janeiro?</label>
+                    <input type="number" id="praias" name="praias" min="1" max="100" step="1">
+
+                    <label for="vontadeVisitarRio">Qual é a sua vontade de visitar o Rio de Janeiro? (0 = Nenhuma,
+                        10 = Muita)</label>
+                    <input type="range" id="vontadeVisitarRio" name="vontadeVisitarRio" min="0" max="10" step="1"
+                        value="5" oninput="this.nextElementSibling.value = this.value">
+                    <output>5</output>
+
+                    <label for="enviarForm">Enviar formulário:</label>
+                    <input type="image" id="enviarForm"
+                        src="images/submit.png"
+                        alt="Enviar Formulário" width="50" height="50">
+                    <label for="reset">Resetar Formulário:</label>
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside class="imagem-principal">
+        <img src="images/Rio-de-Janeiro.jpg" alt="Rio de Janeiro"/>
+    </aside>
+    <footer>
+        <p>Alessandra Oliveira | Lusófona | 2024</p>
+    </footer>
+</body>
+
+</html>
