@@ -20,7 +20,7 @@
             width: 100vw;
             height: 100vh;
             grid-template-rows: auto 1fr auto;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: 1fr;
             grid-template-areas:
                 'header' 'header'
                 'main' 'aside'
@@ -40,7 +40,6 @@
         text-align: center;
         color: black;
         font-weight: bold;
-        font-size: 2em;
     }
 
     footer {
@@ -89,8 +88,6 @@
       aside a{
         text-decoration: none;
     }
-
-    
 
     aside {
         grid-area: aside;
