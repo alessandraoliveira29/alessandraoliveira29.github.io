@@ -171,6 +171,11 @@ article {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+ol li:nth-child(odd),
+ul li:nth-child(odd) {
+    color: #009440;
+    font-size: 2em;
+}
 
 #capitais section:hover {
   background-color: #e0e0e0;
