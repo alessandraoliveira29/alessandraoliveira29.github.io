@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback do Usuário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .feedback-box {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #mouse-status {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Deixe seu Feedback</h2>
+<div class="feedback-box">
+    <label for="feedback">Escreva seu feedback:</label>
+    <textarea id="feedback" rows="3" cols="30" placeholder="Digite aqui..."></textarea>
+    <button id="submitButton">Enviar</button>
+</div>
+
+<p id="mouse-status">Passe o mouse na área abaixo para ver a posição:</p>
+<div id="mouse-area" style="width:300px; height:100px; border:1px solid #ddd; background-color: #e0e0e0;"></div>
+
+<p id="output"></p>
+<nav><a href="index.html">Index</a></nav>
+
+<script src="eventos.js"></script>
+
+</body>
+</html>
