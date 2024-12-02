@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contador por segundo
     let contadorPorSeg = 0;
 
-    function count() {
+    function countPorSeg() {
         contadorPorSeg++;
         document.getElementById('automatic-counter').textContent = contadorPorSeg;
     }
 
     // Chama a função count() a cada 1 segundo 
-    setInterval(count, 1000);
+    setInterval(countPorSeg, 1000);
 
 });
