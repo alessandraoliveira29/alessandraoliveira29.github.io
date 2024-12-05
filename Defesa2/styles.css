@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 80px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+header .logo h1 {
+    text-align: center;
+}
+
+/* Nav do header */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Título produtos */
+#produtos h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Menu de Filtros */
+.filtro-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.filtro-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.filtro-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.filtro-menu label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filtro-menu select,
+.filtro-menu input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Lista de Produtos */
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Produto */
+.produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto h3 {  
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.produto .preco {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto .descricao {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.produto .rating {
+    margin-bottom: 10px;
+}
+
+/* Botão de adicionar ao cesto */
+.produto button {
+    margin-top: auto;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Estilo do Cesto */
+#cesto {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto;
+    display: block; 
+}
+
+/* Título da Seção do Cesto */
+#cesto h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Lista de Produtos no Cesto */
+#cesto .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Ajustes nos Produtos do Cesto */
+#cesto .produto h3,
+#cesto .produto .preco,
+#cesto .produto .rating {
+    color: black;
+}
+
+#cesto .produto .descricao {
+    display: none;
+}
+
+#cesto .preco-total {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Seção Total e Cupons */
+#cesto .total-cupons {
+    background-color: #dcdcdc;
+    color: black;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center; 
+}
+
+#cesto .total-cupons button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    display: block; 
+}
+
+/* mensagem após compra */
+#mensagem-compra {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+#cesto .estudante-deisi label,
+#cesto .cupom-desconto label {
+    margin-right: 10px;
+    color: black;
+}
+
+#cesto .cupom-desconto input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cesto .estudante-deisi input[type="checkbox"] {
+    margin-left: 10px
+}
+
+/* Botão de remover do cesto */
+.botao-remover {
+    margin-top: auto;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja DEISI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/deisi.webp" alt="Logo DEISI">
+            <h1>Loja DEISI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Selecione seus produtos</h2>
+            <nav class="filtro-menu">
+                <ul>
+                    <li>
+                        <label for="filtro-categoria">Filtrar:</label>
+                        <select id="filtro-categoria">
+                            <option value="all">Todas as categorias</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ordenar-avaliacao">Ordenar:</label>
+                        <select id="ordenar-avaliacao">
+                            <option value="none">Ordenar pela avaliação/option>
+                            <option value="crescente">Avaliação Crescente</option>
+                            <option value="decrescente">Avaliação Decrescente</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="procurar-produto">Procurar:</label>
+                        <input type="text" id="procurar-produto" placeholder="pesquise por produto">
+                    </li>
+                    <button id="remover-produtos">Remover produtos carrinho</button>
+                    <button id="menos-info">Menos Info</button>
+                </ul>
+            </nav>
+            <div class="lista-produtos">
+            </div>
+        </section>
+        <section id="cesto">
+            <h2>Produtos Selecionados</h2>
+            <section class="lista-produtos">
+            </section>
+            <section class="total-cupons">
+                <p class="preco-total">Custo total: 0 €</p>
+                <label for="estudante-deisi">És estudante do DEISI?</label>
+                <input type="checkbox" id="estudante-deisi" name="estudante-deisi">
+                <label for="cupom-desconto">Cupão de desconto:</label>
+                <input type="text" id="cupom-desconto" name="cupom-desconto" placeholder="Insira seu cupão">
+                <button id="finalizar-compra">Comprar</button>
+                <p id="mensagem-compra"></p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>2024</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
